@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+    
+<head>
+    <meta charset="UTF-8">
+    <title> Sellkon </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cart.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+
+<body>
+    <div class="topbar__wrapper" role="navigation">
+        <div class="topbar__leftBox">
+            <a href = "home.html">
+                <img class = "topbar__img" src="images/Logo.png"/>
+            </a>
+        </div>
+        <div class="topbar__middleBox">
+            <input type="text" class = "topbar__search" placeholder="Czego szukasz?"/>
+       </div>
+       <div class="topbar__rightBox">
+           <div class = "topbar__rightBox__account">
+                <img src = "images/user.png"/>
+                <a href = "login.html">
+                    <span class = "topbar__rightBox_spanItem">Zaloguj</span>
+                </a>
+            </div>
+
+
+            <div class = "topbar__rightBox__cart">
+                <a href = "cart.html">
+                    <img src = "images/shopping_cart.png">
+                    <span class = "topbar__rightBox_spanItem">Twój Koszyk</span>
+                 </a>
+            </div>
+
+            
+       </div>
+     </div>
+
+
+     
+         <div class = "cart__summary">
+            <div class="cart__summary__title">
+                <span class = "title__order__wraper">Podsumowanie koszyka</span>
+            </div>
+
+            <div class = "cart__summary__left">
+                <div class = "cart__summary__content">
+                    <div>
+                    <span class = "orders__text">Nazwa ulicy: </span>
+                    </div>
+                    <div>
+                    <span id = "street" class = "cart__summary__content__text">--</span>
+                    </div>
+                </div>
+                <div class = "cart__summary__content">
+                    <div>
+                    <span class = "orders__text">Miasto: </span>
+                    </div>
+                    <div>
+                    <span id = "city" class = "cart__summary__content__text">--</span>
+                    </div>
+                </div>
+                <div class = "cart__summary__content">
+                    <div>
+                    <span class = "orders__text">Kod pocztowy: </span>
+                    </div>
+                    <div>
+                    <span id = "code" class = "cart__summary__content__text">--</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class = "cart__summary__right">
+                <div>
+                    <span class = "orders__text">Imie i naziwsko Właściciela karty:</span>
+                 </div>
+                <div>
+                    <span id = "owner_name" class = "cart__summary__content__text">--</span>
+                </div>
+                <div>
+                    <span class = "orders__text">Numer karty:</span>
+                 </div>
+                <div>
+                    <span id = "cart_number" class = "cart__summary__content__text">--</span>
+                </div>
+                <div>
+                    <span class = "orders__text">Data wygaśnięcia:</span>
+                 </div>
+                <div>
+                    <span id = "date_sp" class = "cart__summary__content__text">--</span>
+                </div>
+
+            </div>
+
+            <div class = "summary__price">
+               <span class = "orders__text__finalPrice"> Całkowity koszt koszyka:</span> <span class = "cart__summary__finalPrice" id = "final__price"> </span>
+               <div class = "order__btn">
+                    <span style = "cursor:pointer" onclick = "addOrder()" tabindex="0">Zamów</span>
+                </div>
+            </div>
+        </div>
+
+
+
+     <div class = "order__wrapper">
+
+        <div class = "order__details">
+            <div class="inside__order">
+                <span class = "title__order__wraper">Adres dostawy</span>
+            </div>
+
+            <div class = "inside__order">
+                <span class = "orders__text">Nazwa ulicy</span>
+                <input id = "in_street" placeholder="Nazwa Ulicy"/>
+            </div>
+
+            <div class = "inside__order">
+                <span class = "orders__text">Miasto</span>
+                <input id = "in_city" placeholder="Miasto"/>
+            </div>
+
+            <div class = "inside__order">
+                <span class = "orders__text">Kod pocztowy</span>
+                <input  id = "postal_code" placeholder="Kod pocztowy"/>
+            </div>
+
+            <div class="inside__order">
+                <span style = "cursor: pointer" onclick = "addAddressData()" class = "btn">Dodaj adres</span>
+            </div>
+
+        </div>
+
+        <div class = "payment__details">
+
+            <div class="inside__order">
+            <span class = "title__order__wraper">Dodaj karte</span>
+            </div>
+
+            <div class = "inside__order">
+                <span class = "orders__text">Nazwa Właściciela</span>
+                <input id = "in_owner" placeholder="Nazwa Właściciela"/>
+            </div>
+            <div class = "inside__order">
+                <span class = "orders__text">Numer karty</span>
+                <input id = "in_number" placeholder="Numer karty"/>
+            </div>
+            <div class = "inside__order">
+                <span class = "orders__text">Data wygaśnięcia</span>
+                <input id = "in_endDate" placeholder="Data wygaśnięcia"/>
+            </div>
+            <div class="inside__order">
+                <span onclick = "addCartData()" class = "btn">Dodaj karte</span>
+            </div>
+        </div>
+
+     </div>
+
+
+
+
+     <div class="cart__header__wrapper">
+        <span class="cart__header__title">Twój koszyk</span>
+        <span class="cart__header__deleteCart">Usuń koszyk</span>
+        </div>
+
+        <div class= "cart__item__wrapper">
+
+
+
+            
+            <hr>
+        </div>
+    </div>
+ </div>
+
+
+
+    <footer role = "">
+      <div class = "footer__wraper">
+          <div class = "footer__leftBox">
+  
+              <img src="images/Logo.png" style="margin-bottom: 5%;"/>
+              <div>  Strona zaprojektowana</div>
+              <div>podczas campusu w</div>
+              <div>firmie Britnet</div>
+  
+              <div style = "margin-top: 5%;">
+                  <a href="https://www.facebook.com/">
+                      <img src="images/facebook.png"/>
+                  </a>
+                  <a href="https://www.twitter.com/">
+                      <img src="images/twitter.png"/>
+                  </a>
+                  <a href="https://www.instagram.com/">
+                      <img src="images/instagram.png"/>
+                  </a>
+              </div>
+  
+          </div>
+          <div class = "footer__middleBox">
+              <span class = "footer__title"> Przydatne linki </span>
+                  <span> Strona domowa</span>
+                  <span>Koszyk</span>
+                  <span>Zamówienia</span>
+          </div>
+          <div class = "footer__rightBox">
+             <span class = "footer__title">Kontakt</span>
+             <div class = "footer__description">
+                  <img src="images/call.png"/> 
+                  <span style = "color:gray;">576304115</span>
+             </div>
+  
+             <div class = "footer__description">
+                  <img src="images/mail.png"/> 
+                  <span style = "color:gray;">Sellkon@mail.com </span>
+              </div>
+  
+              <div class = "footer__description"> 
+                  <img src="images/loca.png"/> 
+                  <span style = "color:gray;">Kielce, ul. mała </span>
+              </div>
+  
+          </div>
+      </div>
+  </footer>
+  
+  <!-- TopBar -->
+  <script src="js/isAuthorizedService.js"></script>
+  <script src="js/checkUserStateService.js"></script>
+  <script src = "js/logoutService.js"></script>
+
+  <script src = "js/cartService.js"></script>
+
+
+</body>
+</html>

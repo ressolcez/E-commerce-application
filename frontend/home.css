@@ -1,0 +1,400 @@
+body {
+    padding: 0;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.topbar__wrapper {
+    display: flex;
+}
+  
+.topbar__leftBox {
+    flex: 20%;
+}
+
+.topbar__rightBox {
+    display: flex;
+    flex: 20%;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+    .topbar__rightBox__account{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topbar__rightBox__cart{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .topbar__rightBox_spanItem{
+        display: flex;
+    }
+
+
+.topbar__middleBox{
+    flex: 60%;
+    text-align: center;
+}
+
+ input{
+    background: url(images/serach.png) no-repeat scroll 7px 7px;
+    padding-left:40px;
+    border: none;
+    outline:none;
+ }
+
+ input:active{
+    outline:none;
+ }
+
+    .topbar__search{
+        width:80%;
+        border: 1px solid rgba(0, 0, 0, 0.34);
+        border-radius: 20px;
+        height: 30px;
+    }
+
+
+.list__products__wrapper__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top:2%;
+}
+
+.list__products__wrapper p{
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.list__products{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding-left: 40px;
+}
+
+.product{
+    margin-top: 3%;
+    width:24%;
+    height: 25%; 
+    
+}
+
+.modal {
+    display: none;
+}
+
+.modal__title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.modal__text{
+    display: flex;
+    text-align: center;
+}
+
+.product__image:hover ~ .modal {
+    display: block;
+    justify-content: center;
+    position: fixed;
+    border: 1px solid;
+    background-color: white;
+    max-width: 20%;
+    border-radius: 5px;
+    z-index: 6;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    top: 15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product__image{
+    display: flex;
+    justify-content: center;
+}
+
+.product__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.product__content__title{
+    display: flex;
+    justify-content: center;
+    font-family: 'sans-serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+.product__content__btn__price{
+    display: flex;
+    width: 100%;
+    margin-top:3%;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.product__price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.product__btn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+button{
+    background-color: #7DC855;
+    border-radius: 9px;
+    border: none;
+    width: 50px;
+    height: 30px;
+    padding:3px;
+    cursor: pointer;
+  }
+
+
+.footer__wraper{
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.footer__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+.footer__leftBox{
+    justify-content: flex-start;
+}
+
+.footer__middleBox{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer__rightBox{
+   justify-content: flex-end;
+   flex-direction: column;
+}
+
+    .footer__description{
+        display: flex;
+        margin-top: 5%;
+        align-items: center;
+        gap: 2%;
+    }
+
+a {
+    text-decoration:none;
+    color: black;
+ }
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #7DC855;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    left:45%;
+    z-index: 1;
+    bottom: 5px;
+    font-size: 17px;
+    border: 1px solid black;
+}
+  
+#snackbar.show {
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 1700px) {
+    .list__products{
+        gap:10px;
+    }
+ }
+
+ @media only screen and (max-width: 1000px) {
+    .product:hover > .modal {
+        max-width: 35%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+ }
+
+
+ @media only screen and (max-width: 825px) {
+    .product:hover > .modal {
+        max-width: 30%;
+    }
+ }
+
+
+@media only screen and (max-width: 700px) {
+
+body{
+    padding: 0;
+    margin:3%;
+}
+
+.product:hover > .modal {
+    top:20%;
+    max-width: 40%;
+
+}
+
+.topbar__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+  
+.topbar__leftBox {
+    order: 1;
+}
+
+.topbar__middleBox{
+    margin-top: 2%;
+    order: 2;
+}
+
+    .topbar__search{
+        width:90%;
+    }
+
+
+.topbar__rightBox {
+    order: 1;
+}
+
+    .topbar__rightBox__account{
+        text-align: center;
+    }
+
+    .topbar__rightBox__cart{
+        text-align: center;
+    }
+
+
+.list__products__wrapper__title{
+    font-size: 12px;
+}
+
+
+.product{
+    width: 50%;
+}
+
+.footer__wraper{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+}
+
+.footer__leftBox{
+  margin-top:5%;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__middleBox{
+  margin-top:5%;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__rightBox{
+  margin-top:5%;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1%;
+  margin-top: 0%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+  
+.product{
+    width: 32%;
+}
+    
+}
+
+@media only screen and (max-width: 1100px) {
+  
+    .product{
+        width: 48%;
+    }
+        
+}
+
+@media only screen and (max-width: 600px){
+  
+    .product{
+        margin-top:15%;
+        width: 98%;
+    }
+    
+}
+
+

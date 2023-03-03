@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+    
+<head>
+    <meta charset="UTF-8">
+    <title> Sellkon </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="register.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+
+<body>
+    <div class="topbar__wrapper" role="navigation">
+
+        <div class="topbar__leftBox">
+            <a href = "home.html">
+                <img class = "topbar__img" src="images/Logo.png"/>
+            </a>
+        </div>
+        <div class="topbar__middleBox">
+            <input type="text" class = "topbar__search" placeholder="Czego szukasz?"/>
+       </div>
+
+       <div class="topbar__rightBox">
+           <div class = "topbar__rightBox__account">
+                <img src = "images/user.png"/>
+                <a href = "login.html">
+                    <span class = "topbar__rightBox_spanItem">Zaloguj</span>
+                </a>
+            </div>
+
+            <div class = "topbar__rightBox__cart">
+                <a href = "cart.html">
+                    <img src = "images/shopping_cart.png">
+                    <span class = "topbar__rightBox_spanItem">Twój Koszyk</span>
+                 </a>
+            </div>
+       </div>
+
+     </div>
+     
+
+
+        <div class="container">
+          <h1><img src="images/Logo.png"></h1>
+          <p>Uzupełnij pola aby zarejestorwać się w naszym sklepie</p>
+          <hr>
+      
+          <label><b>Login</b></label>
+          <input id = "login" type="text" placeholder="Wprowadź Login" required>
+      
+          <label><b>Password</b></label>
+          <input id = "password" type="password" placeholder="Wprowadź Hasło" name="psw" required>
+
+          <label><b>Password</b></label>
+          <input id = "rePassword" type="password" placeholder="Potwierdź Hasło" name="psw" required>
+      
+          <label><b>Imie</b></label>
+          <input id = "name" type="text" placeholder="Wprowadź Imie"  required>
+
+          <label><b>Nazwisko</b></label>
+          <input id = "surname" type="text" placeholder="Wprowadź Nazwisko" required>
+
+          <label><b>phone</b></label>
+          <input id = "phone" type="text" placeholder="Wprowadź Telefon" required>
+
+          <label><b>Adres</b></label>
+          <input id = "adres" type="text" placeholder="Wprowadź Adres">
+
+          <div class = "cont__user__state"> <span id = "user__state">Login lub hasło jest niepoprawne.</span></div>
+
+
+          <p>Masz już konto? <a href="login.html">Zaloguj się</a>.</p>
+      
+          <button onclick="registerUser()" class="registerbtn">Zarejestruj</button>
+        </div>
+
+      
+
+     
+    <footer role = "">
+        <div>
+        <div class = "footer__wraper">
+            <div class = "footer__leftBox">
+    
+                <img src="images/Logo.png" style="margin-bottom: 5%;"/>
+                <div>Strona zaprojektowana</div>
+                <div>podczas campusu w</div>
+                <div>firmie Britnet</div>
+    
+                <div style = "margin-top: 5%;">
+                    <a href="https://www.facebook.com/">
+                        <img src="images/facebook.png"/>
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img src="images/twitter.png"/>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagram.png"/>
+                    </a>
+                </div>
+    
+            </div>
+            <div class = "footer__middleBox">
+                <span class = "footer__title"> Przydatne linki </span>
+                    <span> Strona domowa</span>
+                    <span>Koszyk</span>
+                    <span>Zamówienia</span>
+            </div>
+            <div class = "footer__rightBox">
+               <span class = "footer__title">Kontakt</span>
+               <div class = "footer__description">
+                    <img src="images/call.png"/> 
+                    <span style = "color:gray;"> 576304115</span>
+               </div>
+    
+               <div class = "footer__description">
+                    <img src="images/mail.png"/> 
+                    <span style = "color:gray;"> Sellkon@mail.com </span>
+                </div>
+    
+                <div class = "footer__description"> 
+                    <img src="images/loca.png"/> 
+                    <span style = "color:gray;"> Kielce, ul. Mała </span>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+    <script src = "js/logoutService.js"></script>
+    <script src="js/checkUserStateService.js"></script>
+    <script src="js/isAuthorizedService.js"></script>
+    <script src="js/registerService.js"></script>
+</body>
+</html>

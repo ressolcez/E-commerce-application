@@ -1,0 +1,511 @@
+body {
+    padding: 0;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.topbar__wrapper {
+    display: flex;
+}
+  
+.topbar__leftBox {
+    flex: 20%;
+}
+
+.topbar__rightBox {
+    display: flex;
+    flex: 20%;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+    .topbar__rightBox__account{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topbar__rightBox__cart{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .topbar__rightBox_spanItem{
+        display: flex;
+    }
+
+
+.topbar__middleBox{
+    flex: 60%;
+    text-align: center;
+}
+
+ .topbar__search{
+    background: url(images/serach.png) no-repeat scroll 7px 7px;
+    padding-left:40px;
+    outline:none;
+ }
+
+ .topbar__search:active{
+    outline:none;
+ }
+
+    .topbar__search{
+        width:80%;
+        border: 1px solid rgba(0, 0, 0, 0.34);
+        border-radius: 20px;
+        height: 30px;
+    }
+
+
+a {
+    text-decoration:none;
+ }
+
+
+
+ .cart__summary{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.cart__summary__title{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.cart__summary__left{
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+
+.cart__summary__right{
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+.summary__price{
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.cart__summary__finalPrice{
+    font-size: 25.25px;
+}
+
+.orders__text__finalPrice{
+            font-family: 'Cabin';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 19px;
+            letter-spacing: -0.02em;
+            color: rgba(26, 31, 22, 0.5);
+}
+
+.order__btn{
+    margin-top: 1%;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+
+ .order__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:2%;
+ }
+
+ .title__order__wraper{
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31.25px;
+    line-height: 38px;    
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+ }
+
+
+ .order__wrapper input {
+    background: #FFFFFF;
+    border-radius: 13px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(26, 31, 22, 0.5);
+    padding: 8px 16px;
+    outline:none;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    width: 80%;
+    text-align: center;
+
+ }
+
+.order__details{
+    width: 50%;
+    border: 1px solid #DCD3D3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.payment__details{
+    border: 1px solid #DCD3D3;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
+.inside__order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+        .orders__text{
+
+            font-family: 'Cabin';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.02em;
+            color: rgba(26, 31, 22, 0.5);
+
+        }
+
+.btn{
+    background: #000000;
+    border-radius: 13px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    outline:none;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+ .cart__header__wrapper{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+   }
+
+   .cart__header__title{
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31.25px;
+    line-height: 38px;    
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+   }
+
+   .cart__header__deleteCart{
+    font-size: 16px;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+   }
+
+
+   .cart__item__wrapper{
+       width: 100%;
+       margin-top:2%;
+   }
+
+   .cart__item{
+       width: 100%;
+       display: flex;
+       margin-bottom: 10%;
+       margin-top: 5%;
+    }
+
+    .cart__item__image {
+        width: 20%;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .cart__item__desc {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 3%;
+    }
+
+            .cart__item__name {
+                width: 100%;
+                font-size: 24px;
+                font-weight: 300;
+                color: #43474D;
+                margin-right: 10px;
+                margin-top: 1%;
+            }
+            .cart__item__price {
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                font-family: 'Cabin';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 17px;
+                line-height: 24px;
+                margin-bottom: 1%;
+            }
+
+
+    .cart__item__counter{
+        width: 20%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-self: center;
+        margin-bottom: 2%;
+    }
+
+    .inside{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn__plus{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 900;
+        color: green;
+        cursor: pointer;
+       }
+
+       .btn__minus{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        font-size: 35px;
+        font-weight: 900;
+        margin-bottom: 2px;
+        color: red;
+        cursor: pointer;
+       }
+
+    .counter__number{
+        font-size: 25px;
+        font-weight: 900;
+        color: #202020;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+  .footer__wraper{
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.footer__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+.footer__leftBox{
+    justify-content: flex-start;
+}
+
+.footer__middleBox{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer__rightBox{
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  
+     .footer__description{
+         display: flex;
+         margin-top: 5%;
+         align-items: center;
+         gap: 2%;
+     }
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+
+body{
+    padding: 0;
+    margin:3%;
+}
+
+.topbar__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+  
+.topbar__leftBox {
+    order: 1;
+}
+
+.topbar__middleBox{
+    margin-top: 2%;
+    order: 2;
+}
+
+    .topbar__search{
+        width:90%;
+    }
+
+
+.topbar__rightBox {
+    order: 1;
+}
+
+    .topbar__rightBox__account{
+        text-align: center;
+    }
+
+    .topbar__rightBox__cart{
+        text-align: center;
+
+    }
+
+    .footer__wraper{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0%;
+    }
+    
+    .footer__leftBox{
+        margin-top:5%;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .footer__middleBox{
+        margin-top:5%;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .footer__rightBox{
+        margin-top:5%;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+  
+  .footer__description{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 1%;
+      margin-top: 0%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .cart__item__name {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 300;
+        color: #43474D;
+        margin-right: 10px;
+        margin-top: 6%;
+    }
+    .cart__item__price {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Cabin';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 4%;
+    }
+
+    .order__wrapper{
+        flex-direction: column;
+    }
+
+    .payment__details{
+        margin-left: 0%;
+        padding: 0;
+        width: 100%;
+    }
+
+    .order__details{
+        margin-left: 0%;
+        padding: 0;
+        width: 100%;
+    }
+
+}

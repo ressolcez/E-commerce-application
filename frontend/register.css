@@ -1,0 +1,297 @@
+body {
+    padding: 0;
+    margin-top: 1%;
+    height:100vh; 
+    margin-left: 20%;
+    margin-right: 20%;
+    display:flex; 
+    flex-direction:column; 
+  
+}
+
+footer{
+    margin-top:auto; 
+  }
+
+.topbar__wrapper {
+    display: flex;
+    margin-bottom: 3%;
+}
+  
+.topbar__leftBox {
+    flex: 20%;
+}
+
+a {
+    text-decoration:none;
+    color: black;
+ }
+
+.topbar__rightBox {
+    display: flex;
+    flex: 20%;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+    .topbar__rightBox__account{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topbar__rightBox__cart{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .topbar__rightBox_spanItem{
+        display: flex;
+    }
+
+
+.topbar__middleBox{
+    flex: 60%;
+    text-align: center;
+}
+
+ .topbar__search{
+    background: url(images/serach.png) no-repeat scroll 7px 7px;
+    padding-left:40px;
+    border: none;
+    outline:none;
+ }
+
+ .topbar__search:active{
+    outline:none;
+ }
+
+    .topbar__search{
+        width:80%;
+        border: 1px solid rgba(0, 0, 0, 0.34);
+        border-radius: 20px;
+        height: 30px;
+    }
+
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 16px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .container *{
+    box-sizing: border-box;
+
+  }
+  
+  .container input[type=text], .container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .container input[type=text]:focus, .container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+    
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+.footer__wraper{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#user__state{
+    display: none;
+    color: #f44336;
+ }
+
+.footer__leftBox{
+    justify-content: flex-start;
+}
+
+.footer__middleBox{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer__rightBox{
+   justify-content: flex-end;
+   flex-direction: column;
+}
+
+    .footer__description{
+        display: flex;
+        margin-top: 5%;
+        align-items: center;
+        gap: 2%;
+    }
+
+a {
+    text-decoration:none;
+ }
+
+
+
+@media only screen and (max-width: 700px) {
+
+body{
+    padding: 0;
+    margin:3%;
+}
+
+.topbar__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+  
+.topbar__leftBox {
+    order: 1;
+}
+
+.topbar__middleBox{
+    margin-top: 2%;
+    order: 2;
+}
+
+    .topbar__search{
+        width:90%;
+    }
+
+
+.topbar__rightBox {
+    order: 1;
+}
+
+    .topbar__rightBox__account{
+        text-align: center;
+    }
+
+    .topbar__rightBox__cart{
+        text-align: center;
+    }
+
+
+.list__products__wrapper__title{
+    font-size: 12px;
+}
+
+
+.product{
+    width: 50%;
+}
+
+.footer__wraper{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+}
+
+.footer__leftBox{
+    margin-top:5%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer__middleBox{
+    margin-top:5%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer__rightBox{
+    margin-top:5%;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+.footer__description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1%;
+  margin-top: 0%;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 400px){
+  
+    .product{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px){
+  
+    .product{
+        width: 33.3%;
+    }
+    
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px){
+  
+    .product{
+        width: 25%;
+    }
+    
+}

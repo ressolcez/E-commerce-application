@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+    
+<head>
+    <meta charset="UTF-8">
+    <title> Sellkon </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+
+<body>
+    <div class="topbar__wrapper" role="navigation">
+
+        <div class="topbar__leftBox">
+            <a href = "home.html">
+                <img class = "topbar__img" src="images/Logo.png"/>
+            </a>
+        </div>
+        <div class="topbar__middleBox">
+            <input type="text" class = "topbar__search" placeholder="Czego szukasz?"/>
+       </div>
+
+       <div class="topbar__rightBox">
+           <div class = "topbar__rightBox__account">
+
+            </div>
+
+
+            <div class = "topbar__rightBox__cart">
+                <a href = "cart.html">
+                    <img src = "images/shopping_cart.png">
+                    <span class = "topbar__rightBox_spanItem">Twój Koszyk</span>
+                 </a>
+            </div>
+       </div>
+     </div>
+
+     <div class = "login__wrapper">
+        <div>
+        <div class="imgcontainer">
+            <img src="images/Logo.png" class="avatar">
+        </div>
+
+        <div class="container">
+            <label><b>Login</b></label>
+            <input id = "login" type="text" placeholder="Wprowadź login" class="inuput_login" >
+
+            <label><b>Hasło</b></label>
+            <input id = "password" type="password" placeholder="Wprowadź hasło" class = "inuput_login">
+
+            <div class = "cont__user__state"> <span id = "user__state">Login lub hasło jest niepoprawne.</span></div>
+         
+                
+            <button onclick="loginUser()">Login</button>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="history.back()" class="cancelbtn">Powrót</button>
+            <a href = "register.html">
+            <span class="psw">Zarejestruj się</span>
+        </a>
+        </div>
+    </div>
+    </div>
+        
+     
+    <footer role = "">
+        <div class = "footer__wraper">
+            <div class = "footer__leftBox">
+    
+                <img src="images/Logo.png" style="margin-bottom: 5%;"/>
+                <div>  Strona zaprojektowana</div>
+                <div>podczas campusu w</div>
+                <div>firmie Britnet</div>
+    
+                <div style = "margin-top: 5%;">
+                    <a href="https://www.facebook.com/">
+                        <img src="images/facebook.png"/>
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img src="images/twitter.png"/>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagram.png"/>
+                    </a>
+                </div>
+    
+            </div>
+            <div class = "footer__middleBox">
+                <span class = "footer__title"> Przydatne linki </span>
+                    <span> Strona domowa</span>
+                    <span>Koszyk</span>
+                    <span>Zamówienia</span>
+            </div>
+            <div class = "footer__rightBox">
+               <span class = "footer__title">Kontakt</span>
+               <div class = "footer__description">
+                    <img src="images/call.png"/> 
+                    <span style = "color:gray;"> 576304115</span>
+               </div>
+    
+               <div class = "footer__description">
+                    <img src="images/mail.png"/> 
+                    <span style = "color:gray;"> Sellkon@mail.com </span>
+                </div>
+    
+                <div class = "footer__description"> 
+                    <img src="images/loca.png"/> 
+                    <span style = "color:gray;"> Kielce, ul. Mała </span>
+                </div>
+    
+            </div>
+    </footer>
+    <script src="js/isAuthorizedService.js"></script>
+    <script src = "js/loginService.js"></script>
+    <script src="js/checkUserStateService.js"></script>
+    <script src = "js/logoutService.js"></script>
+
+</body>
+</html>
