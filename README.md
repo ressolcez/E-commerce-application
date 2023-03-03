@@ -1,6 +1,10 @@
 # web-app
 
-Projekt sklepu internetowego zrealizowany w technologiach: HTML/CSS/JS/SPRING BOOT/ MYSQL.
+It is an e-commerce application that is divided into two parts:
+- Console application - contains a set of commands that allows to manage the store. Commands that return many rows have been split into pages. 
+- Web application - allows for browsing products, searching for items, and placing orders.
+
+The application's API was created based on the Builder design pattern. The website was created using RWD technology.
 
 ## The Technologies Used in this Project are:
 
@@ -9,11 +13,27 @@ Projekt sklepu internetowego zrealizowany w technologiach: HTML/CSS/JS/SPRING BO
 - JavaScript
 - Spring boot
 - MySQL
+- Maven
 
 ## Application apperance
 
 ## Console application
 
+### Start menu
+
+![image](https://user-images.githubusercontent.com/59510358/222833459-3b986a08-2561-49a8-aee4-ee69a8c302b4.png)
+
+### Command example -> custom pagination
+
+![image](https://user-images.githubusercontent.com/59510358/222833814-992cd5fd-5600-4e4c-974a-46e5662f9f16.png)
+
+### Command example -> add data
+
+![image](https://user-images.githubusercontent.com/59510358/222835624-d9bf2824-7127-47de-8655-c41c4fd1a0a5.png)
+
+### Command example -> Custom query
+
+![image](https://user-images.githubusercontent.com/59510358/222836036-8558e83f-1358-41c1-924a-1a2d3aac3154.png)
 
 ## Website
 
