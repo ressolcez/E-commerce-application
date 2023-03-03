@@ -1,4 +1,4 @@
-# web-app
+# E-commerce-application
 
 It is an e-commerce application that is divided into two parts:
 - Console application - contains a set of commands that allows to manage the store. Commands that return many rows have been split into pages. 
